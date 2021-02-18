@@ -14,7 +14,7 @@ const errorRoutes = require('./routes/error');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
-app.use(adminRoutes);
+app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(errorRoutes);
 
